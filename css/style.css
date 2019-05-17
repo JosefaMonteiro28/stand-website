@@ -1,87 +1,15 @@
-@charset 'utf8';
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Medium.ttf');
+body{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+nav{
+    background: #a29bfe;
+}
+.round{
+    border-radius: 20px !important;
+    width: 400px;
 }
 
-* {
-    font-family: 'Roboto', sans-serif;
+footer{
+    background:#a29bfe;
 }
 
-#fundo {
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    
-}
-
-
-p {
-    text-align: justify;
-   /* text-indent: 20px;*/
-}
-
-.table-responsive {
-    max-height: 600px;
-}
-
-
-.navbar {
-    padding-bottom: 7px !important;
-    padding-top: 7px !important;
-}
-
-.size {
-    height: 100% !important;
-    width: 100% !important;
-}
-
-
-.top-nav-collapse {
-
-  background: #2196f3;
-   
-}
-
-
-    
-.navbar:not(.top-nav-collapse) {
-    background: transparent!important;    
-}
-
-.text-purple-dark {
-   color:  #4285f4!important;
-}
-
-
-  .blue-light {
-      background: #2196f3;
-  }
-
-  .blue-light-text {
-    color: #4285f4;
-}
-
-html, body, header {
-    height: 100%;
-}
-
-@media (max-width: 740px) {
-  html,body,header {
-    height: 1000px;
-  }
-}
-
-@media (min-width: 800px) and (max-width: 850px) {
-  html,body, header {
-    height: 650px;
-    }
-}
-
-@media (max-width: 990px){
-          .navbar:not(.top-nav-collapse) {
-              background: #2196f3 !important;
-              position: fixed;
-          }
-      }
-
-     

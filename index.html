@@ -4,43 +4,274 @@
         <meta charset="utf-8">
         <title>Boostrap 4</title> 
         <link rel="title image" type="image/png" href="img/image2.png">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <link rel="stylesheet" href="mdbootstrap.com/docs/jquery/components/demo/?fbclid=IwAR3nn6XknP5Z8KsDTCwPUvBjcTvk2uv5hQuGlZm7WJrVfbsMyPDe0up3-1I">
     </head>
     <body>
-        <nav class="navbar navbar-expand-md navbar-light bg-dark">
-
-            <a href="#" class="navbar-brand "> <i class="fas fa-car text-primary fa-4px"></i></a>
+        <!----navbar-->
+        <nav class="navbar navbar-expand-md navbar-light fixed-top ">
+            <a href="#" class="navbar-brand "> <i class="fas fa-car text-white fa-4px"></i></a>
             <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav"> <span class="navbar-toggler-icon"></span></button>
                 
             <div class="collapse navbar-collapse justify-content-between" id="nav">
                 <ul class="navbar-nav">
-                    <li class="nav-item "> <a class="nav-link text-light text-uppercase px-3 " href="">Página inicial</a></li>
-                    <li class="nav-item "> <a class="nav-link text-light text-uppercase px-3 " href=""> Carros</a></li>
-                    <li class="nav-item "> <a class="nav-link text-light text-uppercase px-3 " href="">Motas</a></li>
-                    <li class="nav-item dropdown" data-toggle="dropdown"> <a class="nav-link text-light text-uppercase px-3 dropdown-toggle" href="">Acessórios</a>
+                    <li class="nav-item "> <a class="nav-link text-light  px-3 " href="">Página inicial</a></li>
+                    <li class="nav-item "> <a class="nav-link text-light  px-3 " href=""> Carros</a></li>
+                    <li class="nav-item "> <a class="nav-link text-light  px-3 " href="">Motas</a></li>
+                    <li class="nav-item dropdown" data-toggle="dropdown"> <a class="nav-link text-light px-3 dropdown-toggle" href="">Acessórios</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="">Jante</a>
+                            <a class="dropdown-item" href="">Bancos</a>
                             <a class="dropdown-item" href="">Pneu</a>
                             <a class="dropdown-item" href="">Macaco</a>
                         </div>
                     </li> 
                 </ul>
-                <form class="form-inline ml-3" >
-                    <div class="input-group">
-                        <input type="text" placeholder="search" class="form-control" >
-                        <div class="input-group-append">
-                            <button> <i class="fas fa-search"></i></button>
-                        </div>
-                    </div> 
+                <form class="form-inline active-cyan-3 active-cyan-4 ">
+                    <input class="form-control form-control-sm ml-3 w-75 round" type="text" placeholder="Search" aria-label="Search">
+                    <i class="fas fa-search text-white ml-2" aria-hidden="true"></i>
                 </form>
             </div>    
         </nav>
-        
-        
+        <!----end of navbar-->
 
+        <!----banner-->
+        <section>
+            <div class="container-fluid mb-2">
+                <div class="row" >
+                    <img src="img/divo.jpg" alt="" class="img-fluid" style="height: 660px;">
+                </div>
+            </div>
+        </section>
+        <!----end of banner-->
+
+        <!--card-->
+        <section class="p-5 mb-2 bg-light">
+            <div class="container-fluid">
+                <div class="col text-center ">
+                    <h3 class="mb-5 text-muted display-8"> Este é o universo automobilístico</h3>
+                </div>
+            </div>
+                <!-- Card deck -->
+            <div class="card-deck">
+                    <!-- Card -->
+                <div class="card mb-4">
+                     <!--Card image-->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="img/bwm.jpg" alt="Card image cap" style="height: 250px">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">BMW</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet...</p>
+                    </div>
+                    <div class="card-footer ">
+                        <div class="text-right">
+                            <a href=""><i class="fab fa-facebook fa-lg mx-2"></i></i></a>
+                            <a href=""><i class="fab fa-twitter fa-lg mr-2 text-info"></i></a>
+                            <a href=""><i class="fab fa-instagram fa-lg text-danger"></i></a>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="view overlay">
+                        <img class="card-img-top" src="img/moto3.jpg" alt="Card image cap" style="height: 250px">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                    </div>
+      
+                    <div class="card-body">
+                        <h4 class="card-title">Moto</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <div class="card-footer ">
+                        <div class="text-right">
+                            <a href=""><i class="fab fa-facebook fa-lg mx-2"></i></i></a>
+                            <a href=""><i class="fab fa-twitter fa-lg mr-2 text-info"></i></a>
+                            <a href=""><i class="fab fa-instagram fa-lg text-danger"></i></a>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="view overlay">
+                        <img class="card-img-top" src="img/barco2.jpg" alt="Card image cap" style="height: 250px">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                    </div>
+      
+                    <div class="card-body">
+                        <h4 class="card-title">Barco</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet...</p>
+                    </div>
+                    <div class="card-footer ">
+                        <div class="text-right">
+                            <a href=""><i class="fab fa-facebook fa-lg mx-2"></i></i></a>
+                            <a href=""><i class="fab fa-twitter fa-lg mr-2 text-info"></i></a>
+                            <a href=""><i class="fab fa-instagram fa-lg text-danger"></i></a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end of card-->
+
+         <!--card-->
+        <section class="p-5 mb-2 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center ">
+                        <h3 class="mb-5 text-muted display-8">Acessórios</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Card -->
+                    <div class="col-4">
+                        <div class="card mb-4">
+                        <!--Card image-->
+                            <img class="card-img-top" src="img/acessorios.jpg" alt="Card image cap" style="height: 250px">
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            <div class="card-body">
+                                <h4 class="card-title">Bancos</h4>
+                            </div>
+                
+                            <div class="card-footer text-right" style="background: #f5f6fa;">
+                                <a href="#" class="btn btn-outline-primary btn-sm">Saiba mais </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card mb-4">
+                            <div class="view overlay">
+                                <img class="card-img-top" src="img/pneu-continental-aro-15-205-65r15-94h-cross-contact-at-hipervarejo-1_1.jpg" alt="Card image cap" style="height: 250px;">
+                                    <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                            </div>
+            
+                            <div class="card-body">
+                                <h4 class="card-title">Pneu</h4>
+                            </div>
+        
+                            <div class="card-footer text-right" style="background: #f5f6fa;">
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card mb-4">
+                            <div class="view overlay">
+                                <img class="card-img-top" src="img/macaco.jpg" alt="Card image cap" style="height: 250px; ">
+                                    <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                            </div>
+            
+                            <div class="card-body">
+                                <h4 class="card-title">Macaco</h4>
+                            </div>
+                            <div class="card-footer text-right" style="background: #f5f6fa;">
+                                <a href="#" class="btn btn-outline-primary btn-sm">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!--end of card-->
+
+        
+    <!----progress-->
+        <section class="bg-light mt-2">
+            <div class="container fluid">
+                <div class="row">
+                    <div class="col text-center mb-3">
+                        <h3 class="mb-5 text-muted display-8 my-auto">Progresso de qualidade dos nossos produtos</h3>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-sm-10 text-secondary">
+                        <h2>2012</h2>
+                        <div class="progress bg-secondary mb-3">
+                            <div class="progress-bar " style="width:50%">
+                                  50%
+                            </div>
+                        </div>
+
+                        <h2>2014</h2>
+                        <div class="progress bg-secondary mb-3">
+                            <div class="progress-bar  bg-danger " style="width:70%">
+                                  70%
+                            </div>
+                        </div>
+
+                        <h2>2016</h2>
+                        <div class="progress bg-secondary  mb-3">
+                            <div class="progress-bar bg-warning" style="width:89%">
+                                  89%
+                            </div>
+                        </div>
+
+                        <h2>2018</h2>
+                        <div class="progress bg-secondary  mb-3">
+                            <div class="progress-bar bg-sucess" style="width:99%">
+                                  98%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+     <!----end of progress-->
+     <!----Footer-->
+         <!-- Footer -->
+       <footer class="mt-2">
+           <div class="container">
+               <div class="row">
+                   <div class="col texte center p-5">
+                       <div class="py-2 text-center mb-10">
+                            <a class="fb-ic">
+                                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3  fa-2x"> </i>
+                            </a>
+                            <a class="tw-ic">
+                                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <a class="gplus-ic">
+                                <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <a class="li-ic">
+                                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <a class="ins-ic">
+                                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <a class="pin-ic">
+                                <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                            </a>
+                       </div>
+                   </div>
+               </div>
+               <div class="footer-copyright text-center ">© 2019 Copyright:
+                    <a href="https://mdbootstrap.com/education/bootstrap/"> Josefa Monteiro</a>
+                </div>
+           </div>
+       </footer>
+      <!-- Footer -->
+   
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
