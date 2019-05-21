@@ -1,15 +1,37 @@
-body{
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+body {
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+    font-family: 'Montserrat', sans-serif !important;
+
 }
-nav{
-    background: #a29bfe;
+nav {
+  background: #a29bfe;
 }
-.round{
-    border-radius: 20px !important;
-    width: 400px;
+.round {
+  border-radius: 20px !important;
+  width: 400px;
 }
 
-footer{
-    background:#a29bfe;
+footer {
+  background: #a29bfe;
 }
 
+h4 {
+  font-size: 16px !important;
+}
+
+.card-body {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-footer {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-title {
+  margin-top: 3px;
+}
